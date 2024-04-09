@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      document.addEventListener('mousedown', function(event) {
+        cart.classList.toggle("hidden");
+         });
+
     
     images.forEach((image,idx) => {
        image.addEventListener("click", () => {
