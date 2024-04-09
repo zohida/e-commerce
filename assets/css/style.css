@@ -85,6 +85,7 @@
     height: 100vh;
     background-color: white;
     padding: 20px;
+    z-index: 30;
 }
 
 #close-btn {
@@ -92,6 +93,8 @@
     background-color: transparent;
     border: none;
     margin-bottom: 50px;
+    cursor: pointer;
+    
 }
 
 .sidebar-list {
