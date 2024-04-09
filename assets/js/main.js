@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeBtn.addEventListener("click", () => {
         sidebar.classList.add('hidden');
         overlay.classList.add('hidden');
+        document.body.style.overflow = 'auto';
     })
 
     addEventListener.remove()
