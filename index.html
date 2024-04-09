@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo-box">
+            <button class="menu">
+              <img src="./assets/images/icon-menu.svg" alt="">
+            </button>
+            <a href="./index.html">
+              <img src="./assets/images/logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Men</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Women</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-list">
+            <li class="header-item">
+              <div class="box">0</div>
+              <a class="header-link" href="#">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header-item">
+              <img
+                class="profile-img"
+                src="./assets/images/image-avatar.png"
+                alt="User profile"
+                width="44"
+                height="44"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar hidden">
+      <button id="close-btn">
+        <img src="./assets/images/icon-close.svg" alt="Close btn">
+      </button>
+      <ul class="sidebar-list">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">Collections</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">Men</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">Women</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">About</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CART  -->
+
+    <div class="container">
+      <div class="cart hidden">
+        <h2 class="cart-title">Cart</h2>
+        <div class="cart-body">
+          <p class="cart-subtitle">Your cart is empty.</p>
+          <div class="cart-info hidden">
+            <div class="cart-cost__box">
+              <img src="./assets/images/image-product-1.jpg" alt="pic"
+              width="50"
+              height="50">
+              <div class="cost-info">
+                <h4 class="cost-title">
+                  Fall Limited Edition Sneakers
+                </h4>
+                <div class="cost">
+                  <span class="cost-sneakers">
+                    $125.00 x
+                  </span>
+                  <span class="cost-quantity">
+                    3
+                  </span>
+                  <span class="total-cost">
+                    $375.00
+                  </span>
+                </div>
+              </div>
+              <button class="delete-button">
+                <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use fill="#C3CAD9" fill-rule="nonzero" xlink:href="#a"/></svg>
+              </button>
+            </div>
+            <button class="calculate-btn cart-btn">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="">
+          <div class="hero-img__box" id="picture">
+            <img
+              class="img-big"
+              id="bigImg"
+              src="./assets/images/image-product-1.jpg"
+              alt="Pic"
+              width="460"
+              height="450"
+            />
+
+            <ul class="hero-list" id="imgList">
+              <li class="hero-item">
+                <img
+                  src="./assets/images/image-product-1.jpg"
+                  alt="Pic-1"
+                  class="hero-img"
+                  width="100"
+                  height="100"
+                />
+              </li>
+              <li class="hero-item">
+                <img
+                  src="./assets/images/image-product-2.jpg"
+                  alt="Pic-1"
+                  class="hero-img"
+                  width="100"
+                  height="100"
+                />
+              </li>
+              <li class="hero-item">
+                <img
+                  src="./assets/images/image-product-3.jpg"
+                  alt="Pic-1"
+                  class="hero-img"
+                  width="100"
+                  height="100"
+                />
+              </li>
+              <li class="hero-item">
+                <img
+                  src="./assets/images/image-product-4.jpg"
+                  alt="Pic-1"
+                  class="hero-img"
+                  width="100"
+                  height="100"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-info">
+            <h3 class="hero-subtitle">SNEAKER COMPANY</h3>
+            <h1 class="hero-title">Fall Limited Edition Sneakers</h1>
+            <p class="hero-text">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price-box">
+              <div class="hero-price__box price">
+                <ins class="price-amount">$125.00</ins>
+                <div class="price-discount">50%</div>
+              </div>
+              <del class="price-real"> $250.00 </del>
+            </div>
+
+            <div class="hero-count calculate">
+              <div class="quantity">
+                <a class="quantity-link" href="#"
+                id="minusIcon">
+                <svg width="12" height="5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="currentColor" fill-rule="nonzero" xlink:href="#a"/></svg>
+                </a>
+                <p id="count">0</p>
+                <a class="quantity-link" href="#"
+                id="plusIcon">
+                  <svg
+                    width="12"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs>
+                      <path
+                        d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                        id="b"
+                      />
+                    </defs>
+                    <use
+                      fill="currentColor"
+                      fill-rule="nonzero"
+                      xlink:href="#b"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <button class="calculate-btn"
+              id="calculate">
+                <a class="btn-link" href="#">
+                  <svg
+                    width="22"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                      fill="currentColor"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </a>
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="overlay hidden"></div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
