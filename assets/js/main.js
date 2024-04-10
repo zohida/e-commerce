@@ -27,18 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     document.addEventListener('keydown', function(event) {
-     // Check if the pressed key is Esc (key code 27)
         if (event.keyCode === 27) {
-          // Hide the card by adding the "hidden" class
           if (cart) {
             cart.classList.add('hidden');
           }
         }
       });
 
-      document.addEventListener('mousedown', function(event) {
-        cart.classList.toggle("hidden");
-         });
 
     
     images.forEach((image,idx) => {
@@ -103,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.overflow = 'auto';
     })
 
-    addEventListener.remove()
+    document.addEventListener.remove();
 
     
 });
